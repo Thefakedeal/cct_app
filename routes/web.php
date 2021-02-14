@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminSubjectTypeController;
 use App\Http\Controllers\Admin\AdminTermController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,5 @@ Route::group([
     'prefix'=>'admin'
 ],function($routes){
     Route::resource('terms',AdminTermController::class);
+    Route::resource('subjecttypes',AdminSubjectTypeController::class);
 });

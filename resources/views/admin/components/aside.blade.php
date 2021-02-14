@@ -30,6 +30,12 @@
                   <p>Term</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ route('subjecttypes.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Subject Type</p>
+                </a>
+              </li>
           </li>
         </ul>
       </nav>
