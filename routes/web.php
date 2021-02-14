@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminTermController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,10 @@ Route::get('/', function () {
 
 Route::get('/admin', function () {
     return view('admin.app');
+});
+
+Route::group([
+    'prefix'=>'admin'
+],function($routes){
+    Route::resource('terms',AdminTermController::class);
 });
