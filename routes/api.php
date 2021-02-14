@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ApiSubjectTypeController;
 use App\Http\Controllers\Api\ApiTermController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('terms',ApiTermController::class);
+Route::get('subjecttypes',ApiSubjectTypeController::class);
